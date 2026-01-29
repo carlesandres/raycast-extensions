@@ -1,0 +1,88 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "models-dev",
+  "title": "Models Dev",
+  "description": "Explore AI model specifications, pricing, and capabilities from models.dev",
+  "icon": "extension-icon.png",
+  "author": "carlesandres",
+  "platforms": [
+    "macOS",
+    "Windows"
+  ],
+  "categories": [
+    "Developer Tools",
+    "Data"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ai",
+    "models",
+    "models.dev",
+    "llm",
+    "gpt",
+    "claude",
+    "gemini",
+    "openai",
+    "anthropic",
+    "pricing",
+    "comparison",
+    "artificial intelligence"
+  ],
+  "commands": [
+    {
+      "name": "search-models",
+      "title": "Search Models",
+      "subtitle": "Models Dev",
+      "description": "Search across all AI models by name, provider, or capability",
+      "mode": "view"
+    },
+    {
+      "name": "browse-providers",
+      "title": "Browse Providers",
+      "subtitle": "Models Dev",
+      "description": "Explore AI providers and their model offerings",
+      "mode": "view"
+    },
+    {
+      "name": "pricing-explorer",
+      "title": "Pricing Explorer",
+      "subtitle": "Models Dev",
+      "description": "Compare model pricing across providers",
+      "mode": "view"
+    },
+    {
+      "name": "find-by-capability",
+      "title": "Find by Capability",
+      "subtitle": "Models Dev",
+      "description": "Find models that support specific capabilities",
+      "mode": "view"
+    },
+    {
+      "name": "compare-models",
+      "title": "Compare Models",
+      "subtitle": "Models Dev",
+      "description": "Select models to compare side-by-side",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.104.3",
+    "@raycast/utils": "^2.2.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.1.1",
+    "@types/node": "25.1.0",
+    "@types/react": "19.2.10",
+    "eslint": "^9.39.2",
+    "prettier": "^3.8.1",
+    "typescript": "^5.9.3"
+  },
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "prepublishOnly": "echo \"\\n\\nIt seems like you are trying to publish the Raycast extension to npm.\\n\\nIf you did intend to publish it to npm, remove the \\`prepublishOnly\\` script and rerun \\`npm publish\\` again.\\nIf you wanted to publish it to the Raycast Store instead, use \\`npm run publish\\` instead.\\n\\n\" && exit 1",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
